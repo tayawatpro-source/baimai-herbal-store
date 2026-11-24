@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#234b36">
+  <title>ใบไม้ — แชมพูสมุนไพรธรรมชาติ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">✿</span><span>ใบไม้<small>BAIMAI HERBAL CARE</small></span></a>
+    <nav><a href="#products">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><a href="#order">สั่งซื้อ</a></nav>
+    <a class="cart-link" href="#order">สั่งซื้อเลย <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">NATURE CARE · EVERYDAY CONFIDENCE</p>
+        <h1>ดูแลเส้นผม<br>ด้วยพลังจาก<span>ธรรมชาติ</span></h1>
+        <p class="hero-desc">คืนความสดชื่นให้เส้นผมและหนังศีรษะ ด้วยแชมพูสมุนไพรที่คัดสรรส่วนผสมจากธรรมชาติ</p>
+        <a class="primary-btn" href="#products">เลือกชมสินค้า <span>→</span></a>
+        <div class="hero-note"><span>✦</span> ดูแลเส้นผมอย่างอ่อนโยนในทุกวัน</div>
+      </div>
+      <div class="hero-art">
+        <div class="sun"></div><div class="leaf leaf-one">❧</div><div class="leaf leaf-two">❧</div>
+        <div class="hero-bottle"><div class="bottle-cap"></div><div class="bottle-neck"></div><div class="bottle-body"><span>BAIMAI</span><b>HERBAL<br>SHAMPOO</b><small>NATURE CARE</small><i>✿</i></div></div>
+        <div class="hero-stamp">NATURAL<br><b>CARE</b></div>
+      </div>
+    </section>
+
+    <section class="benefits" id="about">
+      <div><span>🌿</span><b>แรงบันดาลใจจากธรรมชาติ</b><small>เลือกสรรสมุนไพรเป็นส่วนผสม</small></div>
+      <div><span>🫧</span><b>ทำความสะอาดเส้นผม</b><small>เหมาะสำหรับการดูแลเป็นประจำ</small></div>
+      <div><span>♡</span><b>ใส่ใจทุกขั้นตอน</b><small>ตั้งแต่เลือกสินค้าจนถึงจัดส่ง</small></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>เลือกสูตรที่ใช่สำหรับคุณ</h2></div><p>แชมพูสมุนไพร 2 สูตร<br>เลือกดูรายละเอียดและสั่งซื้อได้เลย</p></div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image green-bg"><span class="product-tag">BEST SELLER</span><img src="assets/shampoo-kafir.svg" alt="แชมพูมะกรูด ใบไม้"></div>
+          <div class="product-info"><p class="sku">SKU: BM-KF250</p><h3>แชมพูมะกรูด</h3><p class="product-desc">สูตรมะกรูด กลิ่นหอมสดชื่น ช่วยทำความสะอาดเส้นผมและหนังศีรษะ</p><div class="product-bottom"><b>฿159 <small>/ 250 ml</small></b><button class="add-btn" data-product="BM-KF250">เลือกสินค้านี้ +</button></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image purple-bg"><span class="product-tag">HERBAL CARE</span><img src="assets/shampoo-butterflypea.svg" alt="แชมพูอัญชัน ใบไม้"></div>
+          <div class="product-info"><p class="sku">SKU: BM-AP250</p><h3>แชมพูอัญชัน</h3><p class="product-desc">สูตรอัญชัน ดูแลเส้นผมด้วยสารสกัดจากสมุนไพร พร้อมกลิ่นหอมละมุน</p><div class="product-bottom"><b>฿169 <small>/ 250 ml</small></b><button class="add-btn" data-product="BM-AP250">เลือกสินค้านี้ +</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-intro"><p class="eyebrow">ORDER FORM</p><h2>สั่งซื้อสินค้า</h2><p>กรอกข้อมูลให้ครบถ้วน เพื่อให้เราจัดเตรียมสินค้าและจัดส่งถึงคุณได้อย่างถูกต้อง</p><div class="order-help">มีข้อสงสัยเกี่ยวกับสินค้า?<br><b>ติดต่อร้านใบไม้</b> ผ่านช่องทางของร้านค้า</div></div>
+      <form id="orderForm" class="order-form">
+        <label>เลือกสินค้า<select id="product" required><option value="BM-KF250">แชมพูมะกรูด — ฿159</option><option value="BM-AP250">แชมพูอัญชัน — ฿169</option></select></label>
+        <label>จำนวนสินค้า<input id="quantity" type="number" min="1" max="99" value="1" required></label>
+        <div class="form-row"><label>ชื่อ-นามสกุล<input id="customer" required placeholder="ชื่อผู้รับพัสดุ"></label><label>เบอร์โทรศัพท์<input id="phone" type="tel" required placeholder="08X-XXX-XXXX"></label></div>
+        <label>ที่อยู่จัดส่ง<textarea id="address" rows="3" required placeholder="บ้านเลขที่ ถนน ตำบล/แขวง อำเภอ/เขต จังหวัด รหัสไปรษณีย์"></textarea></label>
+        <label>หมายเหตุ (ถ้ามี)<input id="note" placeholder="รายละเอียดเพิ่มเติม"></label>
+        <div class="total-row"><span>ยอดรวมสินค้า</span><strong id="total">฿159</strong></div>
+        <button class="primary-btn submit-btn" type="submit">ยืนยันคำสั่งซื้อ <span>→</span></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+        <small class="privacy-note">ข้อมูลนี้ใช้เพื่อจัดเตรียมคำสั่งซื้อและจัดส่งสินค้าเท่านั้น</small>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">✿</span><span>ใบไม้<small>BAIMAI HERBAL CARE</small></span></a><p>ดูแลเส้นผมด้วยความใส่ใจจากธรรมชาติ</p><small>© 2026 BAIMAI HERBAL CARE. Demo store project.</small></footer>
+
+  <section id="adminPanel" class="admin-panel" hidden>
+    <div class="admin-head"><div><p class="eyebrow">STORE MANAGEMENT</p><h2>รายการคำสั่งซื้อ</h2></div><button id="refreshOrders" class="add-btn">รีเฟรชรายการ</button></div>
+    <p class="admin-warning">หน้าจัดการตัวอย่างนี้ไม่มีระบบเข้าสู่ระบบ ควรจำกัดการเข้าถึงก่อนใช้งานจริง</p>
+    <div id="ordersList"></div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
